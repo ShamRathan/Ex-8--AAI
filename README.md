@@ -1,5 +1,5 @@
-<H3>ENTER YOUR NAME: S.Sham Rathan </H3>
-<H3>ENTER YOUR REGISTER NO.21221230093</H3>
+<H3>Sham Rathan.S</H3>
+<H3>212221230093</H3>
 <H3>EX. NO.8</H3>
 <H3>DATE:</H3>
 <H1 ALIGN =CENTER>Implementation of Speech Recognition</H1>
@@ -41,10 +41,12 @@ except sr.RequestError as e:
 except Exception as e:
     print(f"Error: {e}")
 ```
+
 <H3> Output:</H3>
-![image](https://github.com/ShamRathan/Ex-8--AAI/assets/93587823/c5aaf57b-4eac-4f46-8f7d-914e7e4c6505)
 
+![image](https://github.com/MeethaPrabhu/Ex-8--AAI/assets/119401038/b6248f23-adc2-46b9-8e47-94efc3c59b88)
 
+![image](https://github.com/MeethaPrabhu/Ex-8--AAI/assets/119401038/d5b57db6-8288-4575-ad36-3368f46b4e23)
 
 <H3> Result:</H3>
 Thus, the speech is recorded using microphone and recognized it as text using Speech Recognition
