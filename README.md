@@ -1,5 +1,5 @@
- <H3>ENTER YOUR NAME</H3>
-<H3>ENTER YOUR REGISTER NO.</H3>
+<H3>ENTER YOUR NAME: S.Sham Rathan </H3>
+<H3>ENTER YOUR REGISTER NO.21221230093</H3>
 <H3>EX. NO.8</H3>
 <H3>DATE:</H3>
 <H1 ALIGN =CENTER>Implementation of Speech Recognition</H1>
@@ -22,9 +22,29 @@ Step 11: Perform speech recognition with exceptional handling:<Br>
 •	A generic exception block captures any other unexpected errors.<Br>
 <H3>Program:</H3>
 
-Insert your code her
+```python
+import speech_recognition as sr
 
+r = sr.Recognizer()
+duration = 8
+print("Say something: ")
+with sr.Microphone() as source:
+    audio_data = r.listen(source, timeout=duration)
+
+try:
+    text = r.recognize_google(audio_data)
+    print('You said:', text)
+except sr.UnknownValueError:
+    print("Sorry, could not understand audio")
+except sr.RequestError as e:
+    print(f"Error with the request to Google Speech Recognition service: {e}")
+except Exception as e:
+    print(f"Error: {e}")
+```
 <H3> Output:</H3>
-Show the results here
+![image](https://github.com/ShamRathan/Ex-8--AAI/assets/93587823/c5aaf57b-4eac-4f46-8f7d-914e7e4c6505)
+
+
 
 <H3> Result:</H3>
+Thus, the speech is recorded using microphone and recognized it as text using Speech Recognition
